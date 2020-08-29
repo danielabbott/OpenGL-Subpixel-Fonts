@@ -1,0 +1,21 @@
+Dependencies:
+Freetype2
+STB Rect Pack
+STB Image (Optional)
+STB Image Write (Optional)
+LibWebP (Optional)
+GLFW & OpenGL 3.0 (For Test.cpp)
+
+To enable/disable optional dependencies, (un)comment the #defines at the top of TextureAtlas.h.
+
+
+See Test.cpp for example code.
+
+
+* If the same font is used in a cached texture atlas that is to be loaded and that font is also used to generate a new texture atlas (I'm not sure why you would do that) then load the font first because the texture atlas loading code will create the font object without loading in the .ttf file. *
+
+
+Blending:
+Blending is used as font glyphs can overlap each other,
+glBlendFunc(GL_CONSTANT_COLOR, GL_ONE_MINUS_SRC_COLOR)
+Where the constant colour (glBlendColor) is the colour of the font.
