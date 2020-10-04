@@ -89,7 +89,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\deps\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
     </ClCompile>
@@ -107,7 +107,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\deps\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
     </ClCompile>
@@ -125,7 +125,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\deps\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
     </ClCompile>
@@ -144,7 +144,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\deps\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
     </ClCompile>
@@ -158,17 +158,14 @@
   <ItemGroup>
     <ClInclude Include="GLShader.h" />
     <ClInclude Include="HeapArray.h" />
-    <ClInclude Include="include\stb_image.h" />
-    <ClInclude Include="include\stb_image_write.h" />
-    <ClInclude Include="include\stb_rect_pack.h" />
     <ClInclude Include="TextureAtlas.h" />
     <ClInclude Include="Assert.h" />
     <ClInclude Include="Font.h" />
     <ClInclude Include="SaferRawPointer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="deps\glad.c" />
     <ClCompile Include="Font.cpp" />
-    <ClCompile Include="glad.c" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="stb.cpp" />
     <ClCompile Include="TextureAtlas.cpp" />

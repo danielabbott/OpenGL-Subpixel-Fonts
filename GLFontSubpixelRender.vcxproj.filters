@@ -30,15 +30,6 @@
     <ClInclude Include="HeapArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\stb_image_write.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\stb_rect_pack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\stb_image.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GLShader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -56,7 +47,7 @@
     <ClCompile Include="Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="glad.c">
+    <ClCompile Include="deps\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

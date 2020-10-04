@@ -11,6 +11,13 @@ To enable/disable optional dependencies, (un)comment the #defines at the top of 
 
 See Test.cpp for example code.
 
+The code in Test.cpp requires these files to be downloaded and placed in the working directory.
+Lato-Regular.ttf
+Lato-Bold.ttf
+
+They can be downloaded from here:
+https://fonts.google.com/specimen/Lato
+
 
 * If the same font is used in a cached texture atlas that is to be loaded and that font is also used to generate a new texture atlas (I'm not sure why you would do that) then load the font first because the texture atlas loading code will create the font object without loading in the .ttf file. *
 
